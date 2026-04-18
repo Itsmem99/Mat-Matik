@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matmatik | Den Ultimata Matupplevelsen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="api-card">
+    <p id="daily-advice">"Laddar dagens visdom..."</p>
+</div>
+    <div class="blob-c">
+        <div class="shape-blob one"></div>
+        <div class="shape-blob two"></div>
+        <div class="shape-blob three"></div>
+    </div>
+
+    <header>
+        <div class="logo"><span>🍽️</span> Matmatik</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-btn" id="nav-analys" onclick="showSection('analys')">Analysera</a></li>
+                <li><a href="#" class="nav-btn" id="nav-recept" onclick="showSection('recept')">Utforska Recept</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="analys-section">
+            <section class="hero">
+                <h1 class="glow-text">Skapa magi med <span>Ingredienser</span></h1>
+                <p>Skriv in vad du äter, så sköter Matmatik logiken.</p>
+            </section>
+
+            <div class="app-container">
+                <section class="input-section">
+                    <div class="glass-card main-input">
+                        <div class="card-header">
+                            <h2>Din Köksmästare</h2>
+                            <span class="pulse-dot"></span>
+                        </div>
+                        <textarea id="recipeInput" placeholder="Skriv här... t.ex. lax, ris, ägg"></textarea>
+                        <button class="analyze-btn" onclick="analyzeRecipe()">BERÄKNA ✨</button>
+                    </div>
+                </section>
+
+                <aside class="result-section">
+                    <div id="loading" class="loader" style="display:none;">
+                        <div class="spinner"></div>
+                        <p>Analyserar...</p>
+                    </div>
+                    <div id="nutritionResult" class="glass-card result-card" style="display:none;">
+                        <div class="stat-circle">
+                            <strong id="res-kcal">0</strong>
+                            <span>kcal</span>
+                        </div>
+                        <div class="macro-grid">
+                            <div class="macro-pill p-box">P: <span id="res-protein">0</span>g</div>
+                            <div class="macro-pill c-box">K: <span id="res-carbs">0</span>g</div>
+                            <div class="macro-pill f-box">F: <span id="res-fats">0</span>g</div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <div id="recept-section" style="display:none;">
+            <section class="hero">
+                <h1 class="glow-text">Gourmet <span>Inspiration</span></h1>
+                <p>Handplockade recept för en balanserad livsstil.</p>
+            </section>
+            <div class="recipe-grid" id="recipeGrid"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="api-stats">
+            <span class="separator">|</span>
+            <span id="current-time">🕒 --:--:--</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
