@@ -4,7 +4,6 @@ Mat-Matik är en interaktiv webbapplikation som kombinerar matplanering med smar
 🚀 Funktioner
 Matematisk Matplanering: Räkna ut exakta mängder ingredienser baserat på antal portioner.
 
-Interaktivt Gränssnitt: Enkel hantering av recept och inköpslistor direkt i webbläsaren.
 
 Näringskalkylator: (Om implementerat) Beräkna kalorier eller makronäringsämnen för dina måltider.
 
@@ -15,6 +14,6 @@ Projektet är byggt med ren webbteknik (Frontend):
 
 HTML5: För struktur och innehåll.
 
-CSS3: För layout och design (med fokus på användarvänlighet).
+CSS: För layout och design (med fokus på användarvänlighet).
 
-JavaScript (ES6+): För all logik, beräkningar och interaktivitet.
+JavaScript : För all logik, beräkningar och interaktivitet.
