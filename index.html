@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Mat_matik</title>
+</head>
+<body>
+
+    <h3>Mat--matik</h3>
+    <input type="text" id="search-text" list="ingredientOptions" placeholder="Sök...">
+    <datalist id="ingredientOptions"></datalist>
+    <input type="number" id="amount-gram" placeholder="Gram">
+    <button id="addButton">Lägg till</button>
+
+    <div id="ingredientsContainer"></div>
+
+    <div id="summary">
+        <strong>Total:</strong> <span id="total-kcal">0</span> kcal | 
+        <span id="total-protein">0</span>g P
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
