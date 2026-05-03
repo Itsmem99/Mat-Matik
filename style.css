@@ -1,0 +1,12 @@
+body {
+    background-color: rgba(210, 177, 241, 0.489);
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
